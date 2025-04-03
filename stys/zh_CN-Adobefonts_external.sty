@@ -1,0 +1,27 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{stys/zh_CN-Adobefonts_external}[2015/05/25 zh_CN-Adobefonts_internal Package]
+
+\RequirePackage{fontspec}
+\RequirePackage{xeCJK}
+
+% https://github.com/boathit/CTEX/blob/master/texmf/tex/latex/ctex/fontset/ctex-xecjk-adobefonts.def
+% ctex-xecjk-adobefonts.def: Adobe 的 xeCJK 字体设置，为 Adobe 的四套字体
+% vim:ft=tex
+
+\defaultfontfeatures{Path = fonts/zh_CN-Adobe/, Mapping=tex-text}
+
+\setCJKmainfont[
+BoldFont=AdobeHeitiStd-Regular.otf,
+ItalicFont=AdobeKaitiStd-Regular.otf,
+SmallCapsFont=AdobeHeitiStd-Regular.otf
+]{AdobeSongStd-Light.otf}
+\setCJKsansfont{AdobeHeitiStd-Regular.otf}
+\setCJKmonofont{AdobeFangsongStd-Regular.otf}
+
+\setCJKfamilyfont{zhsong}{AdobeSongStd-Light.otf}
+\setCJKfamilyfont{zhhei}{AdobeHeitiStd-Regular.otf}
+\setCJKfamilyfont{zhfs}{AdobeFangsongStd-Regular.otf}
+\setCJKfamilyfont{zhkai}{AdobeKaitiStd-Regular.otf}
+
+
+\endinput
